@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Map, TileLayer } from "react-leaflet";
 import restaurant_image from '../img/restaurant.jpg'
-import '../App.css';
-
+import '../App.css'
+import 'leaflet/dist/leaflet.css';
 
 
 function Details (props) {
-const [lat, setLat] = useState(0)
-const [lon, setLon] = useState(0)
+const [lat, setLat] = useState(50)
+const [lon, setLon] = useState(6)
+const position = [lat, lon]
 
     return (
     <>
@@ -29,13 +30,6 @@ const [lon, setLon] = useState(0)
             </>
             ))}
      </div>
-     {/* <div className="map">
-            <Map center={[lat, lon]} zoom={13} zoomControl={false}>
-                <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'/>
-        </Map>
-    </div> */}
     </>
     );
   }
