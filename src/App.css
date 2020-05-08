@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
     height: 100vh;
     background-image: url(./img/bg_burger.jpg);
@@ -13,13 +13,15 @@
 
 h1, h2 , h3, h4, h5 {
     margin:  0;
-
 }
+
+
 
 h1 {
     font-size: 50pt;
     color: red;
     text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+    cursor: pointer;
 }
 
 h4 {
@@ -69,10 +71,51 @@ h4 {
 }
 
 .restaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 400px;
-    height: 200px;
+    height: auto;
     background-color: rgba(255, 255, 255, .6);
     margin: 50px;
     padding: 20px 50px;
     border-radius: 30px;   
+    cursor: pointer;
+}
+
+.text {
+    align-self: flex-start;
+    padding-right: 20px;
+}
+
+
+.overview img{
+    width: 200px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.details {
+    width: 700px;
+    height: auto;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 50px;
+    padding: 20px 50px;
+    border-radius: 30px;  
+}
+
+.details img{
+    padding: 50px;
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+.details h2 {
+    font-size: 24pt;
+}
+
+.details p {
+    font-size: 16pt;
 }

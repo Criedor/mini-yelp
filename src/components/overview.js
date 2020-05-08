@@ -12,11 +12,12 @@ function Overview (props) {
         {props.data.length > 1 ? props.data.map((restaurant)=> ( 
             <>
             {console.log(restaurant)}
-            <div className="restaurant" key={restaurant.restaurant.id+restaurant.restaurant.name}>
-                <img src={restaurant_image} alt="logo"></img>
-                <h2 onClick={()=>props.onHandleClick(restaurant.restaurant.id)}>{restaurant.restaurant.name}</h2>
+            <div className="restaurant" key={restaurant.restaurant.id+restaurant.restaurant.name} onClick={()=>props.onHandleClick(restaurant.restaurant.id)}>
+                <div className="text">
+                <h2 >{restaurant.restaurant.name}</h2>
                 <h3>Tags: {restaurant.tag.name}</h3>
-                <p>Comments: {restaurant.comment.text}</p>
+                </div>
+                <img src={restaurant_image} alt="logo"></img>
             </div>
             </>))
         : <></> }
