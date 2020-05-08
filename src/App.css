@@ -97,7 +97,7 @@ h4 {
 }
 
 .details {
-    width: 700px;
+    width: 600px;
     height: auto;
     background-color: rgba(255, 255, 255, .6);
     margin: 50px;
@@ -118,4 +118,9 @@ h4 {
 
 .details p {
     font-size: 16pt;
+}
+
+.map {
+    width: 600px;
+    height: 400px;
 }

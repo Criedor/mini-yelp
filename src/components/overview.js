@@ -16,6 +16,7 @@ function Overview (props) {
                 <div className="text">
                 <h2 >{restaurant.restaurant.name}</h2>
                 <h3>Tags: {restaurant.tag.name}</h3>
+                <h3>City: {restaurant.restaurant.city_id}</h3>
                 </div>
                 <img src={restaurant_image} alt="logo"></img>
             </div>
